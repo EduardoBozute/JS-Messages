@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<metacharset="UTF-8">
+<head>
+<link rel="stylesheet" href="./style.css">   
+</head>    
+<body>
+</body>
+</html>
+<script>
+    var name = prompt("What's Your Name");
+    var message = prompt("Send a Message");
+//Capitalizing Name
+    var upper = (name.slice(0,1)).toUpperCase();
+    var lower = (name.slice(1,name.length)).toLowerCase();
+    var nameCapitalized = (upper+lower);
+//Message Characters
+    var totalCharacters = (message.length);
+    var remainCharacters = (140-(message.length));
+    var displayedCharacters = (message.slice(0,140))
+    alert(nameCapitalized + ": " + displayedCharacters);
+    if (remainCharacters<0) alert ("The message broke the limit of 140 characters.");
+    else;
+</script>
